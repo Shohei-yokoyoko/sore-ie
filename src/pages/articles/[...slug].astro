@@ -1,0 +1,31 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import NextRead from '../../components/NextRead.astro';
+import CTA from '../../components/CTA.astro';
+import { categories } from '../../site-config';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+const { post } = Astro.props;
+const { Content, headings } = await render(post);
+const category = categories.find((item) => item.slug === post.data.category)!;
+const allPosts = await getCollection('posts', ({ data }) => !data.draft);
+const next = post.data.nextSlug ? allPosts.find((item) => item.id === post.data.nextSlug) : undefined;
+const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description, datePublished: post.data.publishedAt.toISOString(), dateModified: (post.data.updatedAt ?? post.data.publishedAt).toISOString(), inLanguage: 'ja-JP' };
+---
+<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image} type="article">
+  <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleSchema)} />
+  <Breadcrumbs items={[{ label: 'カテゴリー', href: '/categories' }, { label: category.name, href: `/categories/${category.slug}` }, { label: post.data.title }]} />
+  <article class="article-shell">
+    <header class="article-header"><p class="article-category">{category.name}</p><h1>{post.data.title}</h1><p class="article-description">{post.data.description}</p><dl class="article-dates"><div><dt>公開日</dt><dd><time datetime={post.data.publishedAt.toISOString()}>{post.data.publishedAt.toLocaleDateString('ja-JP')}</time></dd></div>{post.data.updatedAt && <div><dt>更新日</dt><dd><time datetime={post.data.updatedAt.toISOString()}>{post.data.updatedAt.toLocaleDateString('ja-JP')}</time></dd></div>}</dl></header>
+    {headings.length > 0 && <nav class="toc" aria-label="目次"><p>目次</p><ol>{headings.filter((h) => h.depth <= 3).map((h) => <li class={`depth-${h.depth}`}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav>}
+    <div class="prose"><Content /></div>
+    {next && <NextRead href={`/articles/${next.id}`} title={next.data.title} description={next.data.description} />}
+    {post.data.cta && <CTA {...post.data.cta} />}
+    {post.data.checkedAt && <p class="checked-date">情報確認日：{post.data.checkedAt.toLocaleDateString('ja-JP')}</p>}
+  </article>
+</BaseLayout>

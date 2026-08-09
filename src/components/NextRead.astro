@@ -1,0 +1,10 @@
+---
+const { href, title, description } = Astro.props;
+---
+<aside class="next-read" aria-label="次に読む記事">
+  <p>次に読む記事</p>
+  <a href={href}>
+    <span><strong>{title}</strong><small>{description}</small></span>
+    <span aria-hidden="true">→</span>
+  </a>
+</aside>

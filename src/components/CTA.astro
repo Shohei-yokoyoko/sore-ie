@@ -1,0 +1,10 @@
+---
+const { service, benefit, note, url, label } = Astro.props;
+---
+<aside class="cta-box" aria-label={`${service}の案内`}>
+  <p class="eyebrow">選択肢を比べたい方へ</p>
+  <h2>{service}</h2>
+  <p>{benefit}</p>
+  {note && <p class="cta-note">確認しておきたいこと：{note}</p>}
+  <a class="button" href={url} rel="sponsored noopener">{label}</a>
+</aside>

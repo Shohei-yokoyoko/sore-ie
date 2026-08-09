@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ComparisonTable from '../../components/ComparisonTable.astro';
+import NextRead from '../../components/NextRead.astro';
+---
+<BaseLayout title="記事ページ表示見本" description="非公開の記事ページ表示見本です。" noindex>
+  <Breadcrumbs items={[{ label: '記事ページ表示見本' }]} />
+  <article class="article-shell">
+    <header class="article-header"><p class="article-category">非公開プレビュー</p><h1>記事ページの表示見本</h1><p class="article-description">これはデザイン確認専用です。実在の記事として公開・一覧表示されません。</p><dl class="article-dates"><div><dt>状態</dt><dd>noindex・一覧非表示</dd></div></dl></header>
+    <nav class="toc" aria-label="目次"><p>目次</p><ol><li><a href="#answer">結論を先に整理する</a></li><li><a href="#compare">比較表の表示</a></li><li><a href="#next">次に読む記事</a></li></ol></nav>
+    <div class="prose"><h2 id="answer">結論を先に整理する</h2><p>記事本文は、読み手の悩み、この記事でわかること、結論の順に自然に理解できる構成です。</p><blockquote><strong>ポイント</strong><br />重要な情報は、本文の流れを遮らないボックスで示します。</blockquote><h2 id="compare">比較表の表示</h2><p>スマートフォンでは横にスクロールでき、情報を削らず比較できます。</p><ComparisonTable headers={['比較項目','選択肢A','選択肢B']} rows={[["特徴","確認後に記載","確認後に記載"],["注意点","根拠と出典を記載","根拠と出典を記載"]]} /><h2 id="next">次に読む記事</h2><p>公開済みの記事がつながった時だけ、1本に絞って案内します。</p></div>
+    <NextRead href="/categories" title="公開記事のカテゴリーを確認する" description="公開済みの記事だけをカテゴリー別に表示します。" />
+  </article>
+</BaseLayout>

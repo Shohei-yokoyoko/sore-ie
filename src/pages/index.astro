@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CategoryCard from '../components/CategoryCard.astro';
+import { categories, siteConfig } from '../site-config';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+const countFor = (slug: string) => posts.filter((post) => post.data.category === slug).length;
+---
+<BaseLayout>
+  <section class="hero">
+    <div class="shell hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">借りる・買う・建てる。その前に。</p>
+        <h1>家の迷いを、<br /><span>決める前にほどく。</span></h1>
+        <p class="hero-lead">{siteConfig.concept}</p>
+        <a class="text-link" href="#start">今の悩みから探す <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="home-visual" role="img" aria-label="緑と木の温もりを感じる家のイラスト">
+        <div class="sun"></div><div class="hill back"></div><div class="hill front"></div>
+        <div class="house"><span class="roof"></span><span class="window one"></span><span class="window two"></span><span class="door"></span></div>
+        <div class="tree t1"></div><div class="tree t2"></div>
+        <p>迷ったら、順番に。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section shell" id="start">
+    <div class="section-heading"><p class="eyebrow">初めての方へ</p><h2>いまの状況から、読む場所を選ぶ</h2><p>目的が決まっていなくても大丈夫。近い悩みから始められます。</p></div>
+    <div class="path-grid">
+      <a href="/categories/buy-or-rent"><small>CHOICE 01</small><strong>買うか、借りるか迷っている</strong><span>住まい方を考える →</span></a>
+      <a href="/categories/custom-home"><small>CHOICE 02</small><strong>注文住宅を考え始めた</strong><span>家づくりの順番を知る →</span></a>
+      <a href="/categories/moving"><small>CHOICE 03</small><strong>引越しを控えている</strong><span>新生活を整える →</span></a>
+    </div>
+  </section>
+
+  <section class="section soft-section">
+    <div class="shell">
+      <div class="section-heading split"><div><p class="eyebrow">READING PATH</p><h2>家探しの順番に読む</h2></div><p>住宅展示場、家づくりの流れ、住宅会社選び、比較、資料請求。記事本文を受領・確認後、この順で案内します。</p></div>
+      <ol class="reading-path">
+        <li><span>01</span><strong>まず全体像をつかむ</strong><small>家づくりの流れを知る</small></li>
+        <li><span>02</span><strong>選ぶ基準を持つ</strong><small>住宅会社の違いを比べる</small></li>
+        <li><span>03</span><strong>必要な情報を集める</strong><small>相談・資料請求を検討する</small></li>
+      </ol>
+      {posts.length === 0 && <p class="empty-note">現在、公開中の記事はありません。未完成の記事は表示していません。</p>}
+    </div>
+  </section>
+
+  <section class="section shell">
+    <div class="section-heading"><p class="eyebrow">CATEGORIES</p><h2>住まいのテーマから探す</h2></div>
+    <div class="category-grid">{categories.map((category) => <CategoryCard category={category} count={countFor(category.slug)} />)}</div>
+  </section>
+
+  <section class="section about-strip">
+    <div class="shell about-grid"><div><p class="eyebrow">ABOUT THIS BLOG</p><h2>知りたいことを、決める前に。</h2></div><div><p>住まいに詳しくない方にも伝わる言葉で、判断に必要な情報を一つずつ整理するブログです。</p><a class="text-link" href="/about">このブログについて →</a></div></div>
+  </section>
+</BaseLayout>

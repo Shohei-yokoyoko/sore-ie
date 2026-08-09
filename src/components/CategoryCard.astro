@@ -1,0 +1,12 @@
+---
+const { category, count = 0 } = Astro.props;
+---
+<a class="category-card" href={`/categories/${category.slug}`}>
+  <span class="category-icon" aria-hidden="true">{category.icon}</span>
+  <span>
+    <strong>{category.name}</strong>
+    <small>{category.short}</small>
+    <em>{count > 0 ? `${count}件の記事` : '記事は準備中'}</em>
+  </span>
+  <span class="arrow" aria-hidden="true">→</span>
+</a>

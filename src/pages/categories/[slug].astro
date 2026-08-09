@@ -1,0 +1,17 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { categories } from '../../site-config';
+
+export function getStaticPaths() { return categories.map((category) => ({ params: { slug: category.slug }, props: { category } })); }
+const { category } = Astro.props;
+const posts = (await getCollection('posts', ({ data }) => !data.draft && data.category === category.slug)).sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+---
+<BaseLayout title={category.name} description={category.short}>
+  <Breadcrumbs items={[{ label: 'カテゴリー', href: '/categories' }, { label: category.name }]} />
+  <section class="page-hero shell"><p class="eyebrow">CATEGORY</p><h1>{category.name}</h1><p>{category.short}</p></section>
+  <section class="section shell">
+    {posts.length ? <div class="post-list">{posts.map((post) => <article><p>{post.data.publishedAt.toLocaleDateString('ja-JP')}</p><h2><a href={`/articles/${post.id}`}>{post.data.title}</a></h2><p>{post.data.description}</p></article>)}</div> : <div class="empty-state"><strong>このカテゴリーの記事は準備中です。</strong><p>本文と事実確認が完了した記事だけを公開します。</p><a class="text-link" href="/categories">ほかのカテゴリーを見る →</a></div>}
+  </section>
+</BaseLayout>

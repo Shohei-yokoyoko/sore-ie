@@ -1,0 +1,20 @@
+---
+import { siteConfig } from '../site-config';
+---
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <p class="footer-brand">{siteConfig.name}</p>
+      <p>{siteConfig.description}</p>
+    </div>
+    <nav aria-label="フッターナビゲーション">
+      <a href="/about">このブログについて</a>
+      <a href="/profile">プロフィール</a>
+      <a href="/privacy">プライバシーポリシー</a>
+      <a href="/disclaimer">免責事項</a>
+      <a href="/contact">お問い合わせ</a>
+      <a href="/site-map">サイトマップ</a>
+    </nav>
+  </div>
+  <p class="copyright">© {new Date().getFullYear()} {siteConfig.name}</p>
+</footer>

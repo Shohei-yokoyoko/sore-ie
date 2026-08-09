@@ -1,0 +1,9 @@
+---
+const { headers = [], rows = [] } = Astro.props;
+---
+<div class="table-scroll" tabindex="0" role="region" aria-label="比較表">
+  <table>
+    <thead><tr>{headers.map((header: string) => <th scope="col">{header}</th>)}</tr></thead>
+    <tbody>{rows.map((row: string[]) => <tr>{row.map((cell, i) => i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>)}</tr>)}</tbody>
+  </table>
+</div>
