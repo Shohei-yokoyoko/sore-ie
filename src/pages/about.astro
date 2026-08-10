@@ -2,4 +2,21 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
-<BaseLayout title="このブログについて"><Breadcrumbs items={[{ label: 'このブログについて' }]} /><section class="page-hero shell"><p class="eyebrow">ABOUT</p><h1>このブログについて</h1><p>家を決める前の迷いを、一つずつ整理するための住宅ブログです。</p></section><section class="legal-page shell"><h2>目指していること</h2><p>住まいに詳しくない一般の方にも伝わる言葉で、意思決定に必要な情報を順序立てて届けます。</p><h2>情報の扱い</h2><p>公開日・更新日・情報確認日を示し、外部情報を参照するときは出典を明記します。運営者の経歴や実体験は、本人確認後にプロフィールへ掲載します。</p></section></BaseLayout>
+<BaseLayout title="このブログについて">
+  <Breadcrumbs items={[{ label: 'このブログについて' }]} />
+  <section class="page-hero shell">
+    <p class="eyebrow">ABOUT</p>
+    <h1>このブログについて</h1>
+    <p>家を決める前の迷いを、一つずつ整理するための住宅ブログです。</p>
+  </section>
+  <section class="legal-page shell">
+    <h2>目指していること</h2>
+    <p>住まいに詳しくない方でも、「次に何を考えればいいか」が分かるように、賃貸・家探し・家づくり・引越しまで、必要な情報をできるだけ分かりやすい言葉で順番に届けます。</p>
+    <p>「それ、先に知りたかった」を少しでも減らせるブログを目指しています。</p>
+
+    <h2>情報の扱い</h2>
+    <p>記事には公開日・更新日・情報確認日を記載し、外部情報を参照する場合は出典を明記します。</p>
+    <p>制度・サービス内容・料金など変更される可能性がある情報は、できる限り最新の公式情報を確認して掲載します。</p>
+    <p>また、実体験や個人的な意見を含む場合は、一般的な情報と分けて分かるように記載します。</p>
+  </section>
+</BaseLayout>

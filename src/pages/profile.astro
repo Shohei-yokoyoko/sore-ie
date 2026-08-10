@@ -1,4 +1,39 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'; import Breadcrumbs from '../components/Breadcrumbs.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
-<BaseLayout title="プロフィール" noindex><Breadcrumbs items={[{ label: 'プロフィール' }]} /><section class="page-hero shell"><p class="eyebrow">PROFILE</p><h1>プロフィール</h1><p>運営者情報は、ご本人による内容確認後に掲載します。</p></section><section class="legal-page shell"><div class="pending-box">確認待ち：紹介文、住宅関連業務の経歴、保有資格、記事制作方針</div></section></BaseLayout>
+<BaseLayout title="プロフィール">
+  <Breadcrumbs items={[{ label: 'プロフィール' }]} />
+  <section class="page-hero shell">
+    <p class="eyebrow">PROFILE</p>
+    <h1>プロフィール</h1>
+  </section>
+  <section class="legal-page shell">
+    <p>はじめまして。</p>
+    <p>「それ、家を決める前に。」を運営しています。</p>
+    <p>私は住宅関連の仕事に携わりながら、自身でも賃貸暮らしと住宅購入を経験してきました。</p>
+    <p>家を探したり、住宅会社を比較したり、実際に住み始めたりする中で、</p>
+    <p>「これ、もっと早く知っていたかったな」</p>
+    <p>と思うことが何度もありました。</p>
+    <p>住宅のことは、調べれば情報そのものはたくさん出てきます。</p>
+    <p>ただ、専門用語が多かったり、情報がバラバラだったりして、「結局、自分は次に何をすればいいのか」が分かりにくいことも少なくありません。</p>
+    <p>このブログでは、賃貸・家探し・建売・注文住宅・住宅会社選び・引越し・入居後まで、住まいに関する情報をできるだけ分かりやすく整理してお届けします。</p>
+    <p>また、一般的な情報だけでなく、自分自身の経験や「自分ならどう考えるか」という視点も、事実と意見を分けながら掲載していきます。</p>
+    <p>このブログを読んだ方が、家を決めたあとに</p>
+    <p>「それ、先に知りたかった……」</p>
+    <p>と思うことを、一つでも減らせればうれしいです。</p>
+
+    <h2>このブログで大切にしていること</h2>
+    <ul>
+      <li>専門用語をできるだけ分かりやすくする</li>
+      <li>出典を確認できる情報は明記する</li>
+      <li>制度やサービス内容は可能な限り最新情報を確認する</li>
+      <li>実体験と一般的な情報を混同しない</li>
+      <li>経験していないことを、経験したように書かない</li>
+      <li>特定の住宅会社やサービスを理由なく持ち上げない</li>
+    </ul>
+
+    <p>住まい選びには、一人ひとり違う正解があります。</p>
+    <p>「これが正解です」と押しつけるのではなく、読んだ方が自分で納得して選べる材料を届けることを目指しています。</p>
+  </section>
+</BaseLayout>
