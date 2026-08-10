@@ -1,4 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'; import Breadcrumbs from '../components/Breadcrumbs.astro';
 ---
-<BaseLayout title="プライバシーポリシー" noindex><Breadcrumbs items={[{ label: 'プライバシーポリシー' }]} /><section class="page-hero shell"><p class="eyebrow">PRIVACY</p><h1>プライバシーポリシー</h1><p>利用する解析・広告・お問い合わせサービスの確定後に正式な内容を掲載します。</p></section><section class="legal-page shell"><div class="pending-box">確認待ち：アクセス解析、Cookie、広告配信、問い合わせフォーム、個人情報の管理方法</div></section></BaseLayout>
+<BaseLayout title="プライバシーポリシー" noindex>
+  <Breadcrumbs items={[{ label: 'プライバシーポリシー' }]} />
+  <section class="page-hero shell">
+    <p class="eyebrow">PRIVACY</p>
+    <h1>プライバシーポリシー</h1>
+    <p>当サイトにおけるアクセス情報の取り扱いについて説明します。</p>
+  </section>
+  <section class="legal-page shell">
+    <h2>アクセス解析ツールについて</h2>
+    <p>当サイトでは、サイトの利用状況を把握し、内容の改善に役立てるため、Google LLCが提供する「Google Analytics」を利用しています。</p>
+    <p>Google Analyticsは、Cookieなどを利用して閲覧状況に関する情報を収集します。収集された情報は、Googleのプライバシーポリシーに基づいて管理されます。</p>
+    <p><a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener noreferrer">Google プライバシーポリシー</a></p>
+
+    <h2>Google Analyticsの無効化について</h2>
+    <p>利用者は、ブラウザのCookieを無効にするか、Googleが提供するオプトアウトアドオンを利用することで、Google Analyticsによる測定を無効にできます。</p>
+    <p><a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener noreferrer">Google Analytics オプトアウト アドオン</a></p>
+
+    <h2>プライバシーポリシーの変更</h2>
+    <p>利用サービスや法令等の変更に応じて、本ポリシーの内容を見直すことがあります。</p>
+    <p>制定日：2026年8月10日</p>
+  </section>
+</BaseLayout>
