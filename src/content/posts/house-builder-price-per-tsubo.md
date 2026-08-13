@@ -3,9 +3,9 @@ title: "坪単価だけでハウスメーカーを比較してはいけない理
 description: "坪単価だけでハウスメーカーを比較してはいけない理由を解説。坪単価の計算方法や含まれる費用、設備・仕様による違いと、住宅会社を選ぶときに総額や標準仕様など何を比較すべきかを紹介します。"
 category: "custom-home"
 publishedAt: 2026-08-13
-updatedAt: 2026-08-13
+updatedAt: 2026-08-14
 draft: false
-nextSlug: "housing-company-checkpoints"
+nextSlug: "house-builder-estimate-comparison"
 ---
 
 注文住宅を調べていると、
@@ -450,3 +450,9 @@ B社：坪単価80万円
 **総額と中身をセットで比較する。**
 
 これが、坪単価という一つの数字だけに振り回されず、自分たちに合った住宅会社を探す方法だと思います。
+
+坪単価だけでは住宅会社を比較できないことが分かったら、次に確認したいのが実際の見積書です。
+
+見積書では総額だけでなく、「何が含まれているのか」を比較する必要があります。
+
+→ [ハウスメーカーの見積書はどこを見る？比較ポイントを解説](/articles/house-builder-estimate-comparison)
