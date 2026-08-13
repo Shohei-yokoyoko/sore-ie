@@ -102,6 +102,34 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .legal-page h2 { margin-top: 42px; color: var(--navy); font-family: "Yu Mincho", serif; font-size: 1.55rem; }
 .pending-box { padding: 24px; border: 1px dashed #8d9c91; border-radius: 14px; background: var(--cream); color: var(--muted); }
 
+.contact-page { width: min(800px, calc(100% - 40px)); padding-block: 54px 100px; }
+.contact-notice { margin-bottom: 36px; padding: 24px 28px; border-left: 5px solid var(--green); border-radius: 0 14px 14px 0; background: var(--cream); }
+.contact-notice h2 { margin: 0 0 12px; color: var(--navy); font-size: 1.25rem; }
+.contact-notice ul { margin: 0; padding-left: 1.4em; }
+.contact-form { display: grid; gap: 26px; }
+.form-field { display: grid; gap: 8px; }
+.form-field label, .agreement-field label { color: var(--navy); font-weight: 800; }
+.form-field input, .form-field select, .form-field textarea { width: 100%; border: 1px solid #9aa79f; border-radius: 10px; background: #fff; color: var(--ink); font: inherit; }
+.form-field input, .form-field select { min-height: 50px; padding: 10px 13px; }
+.form-field textarea { min-height: 220px; padding: 13px; resize: vertical; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus { border-color: var(--green); outline: 3px solid rgba(49,91,75,.18); outline-offset: 2px; }
+.required-label, .optional-label { display: inline-block; margin-left: 7px; padding: 2px 7px; border-radius: 999px; font-size: .72rem; line-height: 1.5; vertical-align: .12em; }
+.required-label { background: #8b352f; color: #fff; }
+.optional-label { background: #e6e9e6; color: var(--muted); }
+.field-help { margin: 0; color: var(--muted); font-size: .88rem; }
+.agreement-field { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; padding: 18px; border-radius: 10px; background: var(--cream); }
+.agreement-field input { width: 20px; height: 20px; margin: 5px 0 0; accent-color: var(--green); }
+.contact-submit { min-height: 52px; justify-self: start; padding: 12px 34px; border: 0; border-radius: 999px; background: var(--green); color: #fff; cursor: pointer; font: inherit; font-weight: 800; }
+.contact-submit:hover:not(:disabled) { background: #23483a; }
+.contact-submit:disabled { cursor: not-allowed; opacity: .62; }
+.form-message { margin-bottom: 28px; padding: 24px; border-radius: 14px; }
+.form-message h2, .form-message p { margin: 0; }
+.form-message h2 { margin-bottom: 6px; font-size: 1.25rem; }
+.form-success { border: 1px solid #8eb09a; background: #edf6ef; color: #244936; }
+.form-error { border: 1px solid #c98a85; background: #fff0ef; color: #762e29; }
+.form-setup-note { margin: -10px 0 0; color: var(--muted); font-size: .9rem; }
+.honeypot { position: absolute !important; width: 1px !important; height: 1px !important; overflow: hidden !important; clip: rect(0 0 0 0) !important; white-space: nowrap !important; }
+
 .article-shell { width: min(760px, calc(100% - 40px)); margin: 50px auto 110px; }
 .article-header { padding-bottom: 34px; border-bottom: 1px solid var(--line); }
 .article-category { display: inline-block; margin: 0 0 16px; padding: 5px 12px; border-radius: 999px; background: var(--green-light); color: var(--green); font-size: .82rem; font-weight: 800; }
@@ -161,6 +189,9 @@ tbody th { background: var(--cream); color: var(--navy); }
   .category-card { min-height: 144px; grid-template-columns: auto 1fr; }
   .category-card .arrow { display: none; }
   .page-hero { padding-block: 50px 30px; }
+  .contact-page { width: min(100% - 28px, 800px); padding-block: 40px 76px; }
+  .contact-notice { padding: 20px; }
+  .contact-submit { width: 100%; }
   .article-shell { width: min(100% - 28px, 760px); margin-top: 34px; }
   .article-header h1 { font-size: clamp(2rem, 9vw, 2.8rem); }
   .toc { padding: 20px; }
