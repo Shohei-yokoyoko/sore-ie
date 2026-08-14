@@ -3,7 +3,7 @@ title: "住宅会社選びで失敗しないためのチェックポイント15�
 description: "住宅会社を比較するときに確認したい総予算、標準仕様、住宅性能、保証、施工体制、担当者など15項目を整理します。"
 category: "custom-home"
 publishedAt: 2026-08-10
-updatedAt: 2026-08-10
+updatedAt: 2026-08-15
 checkedAt: 2026-08-10
 draft: false
 nextSlug: "how-many-house-builders"
@@ -50,7 +50,7 @@ nextSlug: "how-many-house-builders"
 
 会社を比較するときは、できるだけ条件を揃えて、最終的に必要になる金額を確認します。
 
-→ 関連記事：ハウスメーカーの見積書はどこを見る？比較ポイントを解説（公開後に追加）
+→ 関連記事：[ハウスメーカーの見積書はどこを見る？比較ポイントを解説](/articles/house-builder-estimate-comparison)
 
 ## 2. 標準仕様の範囲
 
@@ -249,7 +249,7 @@ B社ではオプション。
 
 「今月契約すれば安くなります」などと言われても、分からないことを残したまま契約しないことが大切です。
 
-→ 関連記事：注文住宅の契約前に絶対確認したい20項目（公開後に追加）
+→ 関連記事：[注文住宅の契約前に絶対確認したい20項目](/articles/custom-home-before-contract-checklist)
 
 ## 14. 会社規模ではなく、自分の条件に合うか
 
