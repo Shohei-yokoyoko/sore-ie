@@ -197,6 +197,7 @@ tbody th { background: var(--cream); color: var(--navy); }
   .toc { padding: 20px; }
   .prose { font-size: 1rem; line-height: 1.95; }
   .prose h2 { font-size: 1.48rem; }
+  .prose > table { min-width: 0; table-layout: auto; }
   .footer-grid nav { grid-template-columns: 1fr; }
 }
 
