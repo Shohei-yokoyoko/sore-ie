@@ -3,9 +3,8 @@ title: "家づくりで後悔しやすいこと20選"
 description: "家づくりで後悔しやすいこと20選を紹介。間取り、収納、コンセント、生活動線、庭など、住んでから気づきやすいポイントを実際の建売住宅購入・居住経験も交えて解説します。"
 category: "custom-home"
 publishedAt: 2026-08-10
-updatedAt: 2026-08-10
+updatedAt: 2026-08-22
 draft: false
-nextSlug: "housing-company-checkpoints"
 ---
 
 家づくりで怖いのは、建てる前には気づかなかったことが、住み始めてから毎日の不便になることです。
