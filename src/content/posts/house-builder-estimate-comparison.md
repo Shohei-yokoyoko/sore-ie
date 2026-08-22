@@ -3,10 +3,9 @@ title: "ハウスメーカーの見積書はどこを見る？比較ポイント
 description: "ハウスメーカーの見積書はどこを見ればいい？本体工事費・付帯工事費・諸費用・標準仕様など、複数社を比較するときのポイントを住宅購入経験も交えて解説します。"
 category: "custom-home"
 publishedAt: 2026-08-14
-updatedAt: 2026-08-15
+updatedAt: 2026-08-22
 checkedAt: 2026-08-14
 draft: false
-nextSlug: "custom-home-before-contract-checklist"
 ---
 
 注文住宅で複数のハウスメーカーから見積もりをもらったとき、
