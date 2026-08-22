@@ -69,6 +69,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .decision-grid a:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .decision-grid small { color: var(--wood); font-weight: 900; letter-spacing: .12em; }
 .decision-grid strong { color: var(--navy); font-family: "Yu Mincho", serif; font-size: 1.22rem; line-height: 1.55; }
+.decision-grid p { margin: 0; color: var(--muted); line-height: 1.8; }
 .decision-grid span { align-self: end; color: var(--green); font-weight: 800; }
 .soft-section { background: var(--cream); }
 .reading-path { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 50px 0 26px; padding: 0; list-style: none; counter-reset: item; }
@@ -107,6 +108,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .stage-heading { margin-bottom: 22px; }
 .stage-heading h2 { margin: 0 0 6px; color: var(--navy); font-family: "Yu Mincho", serif; font-size: clamp(1.55rem, 3vw, 2.2rem); }
 .stage-heading p { margin: 0; color: var(--muted); }
+.category-post-index { margin-top: 72px; }
 .empty-state { max-width: 650px; padding: 40px; border-radius: var(--radius); background: var(--cream); }
 .empty-state strong { color: var(--navy); font-size: 1.25rem; }
 .legal-page { max-width: 800px; padding-block: 60px 100px; }
