@@ -3,10 +3,9 @@ title: "ハウスメーカーは何社比較すればいい？1社だけで決�
 description: "ハウスメーカーは何社比較すべきか、1社だけで決める前に比較したい理由と、社数より大切な比較条件を解説します。"
 category: "custom-home"
 publishedAt: 2026-08-10
-updatedAt: 2026-08-10
+updatedAt: 2026-08-22
 checkedAt: 2026-08-10
 draft: false
-nextSlug: "custom-home-request-service-comparison"
 ---
 
 家づくりを始めると、
