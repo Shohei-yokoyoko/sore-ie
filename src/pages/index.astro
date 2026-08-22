@@ -20,7 +20,7 @@ const countFor = (slug: string) => posts.filter((post) => post.data.category ===
         <div class="sun"></div><div class="hill back"></div><div class="hill front"></div>
         <div class="house"><span class="roof"></span><span class="window one"></span><span class="window two"></span><span class="door"></span></div>
         <div class="tree t1"></div><div class="tree t2"></div>
-        <p>迷ったら、順番に。</p>
+        <p>迷いに近い入口から。</p>
       </div>
     </div>
   </section>
@@ -36,12 +36,16 @@ const countFor = (slug: string) => posts.filter((post) => post.data.category ===
 
   <section class="section soft-section">
     <div class="shell">
-      <div class="section-heading split"><div><p class="eyebrow">READING PATH</p><h2>家探しの順番に読む</h2></div><p>住宅展示場、家づくりの流れ、住宅会社選び、比較、資料請求。この順で迷いを整理できます。</p></div>
-      <ol class="reading-path">
-        <li><span>01</span><strong>まず全体像をつかむ</strong><small>家づくりの流れを知る</small></li>
-        <li><span>02</span><strong>選ぶ基準を持つ</strong><small>住宅会社の違いを比べる</small></li>
-        <li><span>03</span><strong>必要な情報を集める</strong><small>相談・資料請求を検討する</small></li>
-      </ol>
+      <div class="section-heading split"><div><p class="eyebrow">YOUR CURRENT STEP</p><h2>いま何に迷っているかから選ぶ</h2></div><p>最初から順番に読む必要はありません。今の悩みに近い入口から確認できます。</p></div>
+      <div class="decision-grid">
+        <a href="/articles/custom-home-building-flow"><small>START 01</small><strong>何から始めるか分からない</strong><span>注文住宅の流れを見る →</span></a>
+        <a href="/articles/built-house-vs-custom-home"><small>START 02</small><strong>建売と注文住宅で迷っている</strong><span>違いを比較する →</span></a>
+        <a href="/articles/housing-company-checkpoints"><small>START 03</small><strong>住宅会社をどう選ぶか知りたい</strong><span>選び方を確認する →</span></a>
+        <a href="/articles/how-many-house-builders"><small>START 04</small><strong>何社比較するか知りたい</strong><span>比較社数を考える →</span></a>
+        <a href="/articles/house-builder-estimate-comparison"><small>START 05</small><strong>見積書を比較したい</strong><span>見積書の見方を確認する →</span></a>
+        <a href="/articles/custom-home-request-service-comparison"><small>START 06</small><strong>住宅会社・資料請求サービスを比較したい</strong><span>比較方法を選ぶ →</span></a>
+        <a href="/articles/custom-home-before-contract-checklist"><small>START 07</small><strong>契約直前の確認をしたい</strong><span>契約前の項目を見る →</span></a>
+      </div>
       {posts.length === 0 && <p class="empty-note">現在、公開中の記事はありません。未完成の記事は表示していません。</p>}
     </div>
   </section>
