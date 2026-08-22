@@ -150,6 +150,7 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .article-description { color: var(--muted); font-size: 1.05rem; }
 .article-dates { display: flex; flex-wrap: wrap; gap: 18px; margin: 24px 0 0; font-size: .84rem; color: var(--muted); }
 .article-dates div { display: flex; gap: 8px; } .article-dates dt { font-weight: 800; } .article-dates dd { margin: 0; }
+.affiliate-disclosure { margin: 28px 0 0; padding: 20px 24px; border-radius: 12px; background: #edf3ed; color: #2c493d; }
 .toc { margin: 36px 0 48px; padding: 24px 28px; border: 1px solid var(--line); border-radius: 14px; background: var(--cream); }
 .toc > p { margin: 0 0 10px; color: var(--navy); font-weight: 900; }
 .toc ol { margin: 0; padding-left: 1.4em; } .toc li { margin: 5px 0; } .toc .depth-3 { margin-left: 1em; font-size: .93rem; }
