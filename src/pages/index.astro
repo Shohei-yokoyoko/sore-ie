@@ -28,23 +28,24 @@ const countFor = (slug: string) => posts.filter((post) => post.data.category ===
   <section class="section shell" id="start">
     <div class="section-heading"><p class="eyebrow">初めての方へ</p><h2>いまの状況から、読む場所を選ぶ</h2><p>目的が決まっていなくても大丈夫。近い悩みから始められます。</p></div>
     <div class="path-grid">
-      <a href="/categories/buy-or-rent"><small>CHOICE 01</small><strong>買うか、借りるか迷っている</strong><span>住まい方を考える →</span></a>
-      <a href="/articles/housing-exhibition-before-visit"><small>CHOICE 02</small><strong>注文住宅を考え始めた</strong><span>家づくりの順番を知る →</span></a>
-      <a href="/categories/moving"><small>CHOICE 03</small><strong>引越しを控えている</strong><span>新生活を整える →</span></a>
+      <a href="/categories/buy-or-rent"><small>住まい方</small><strong>買うか、借りるか迷っている</strong><span>住まい方を考える →</span></a>
+      <a href="/articles/housing-exhibition-before-visit"><small>家づくり</small><strong>注文住宅を考え始めた</strong><span>住宅展示場へ行く前に確認する →</span></a>
+      <a href="/categories/moving"><small>新生活</small><strong>引越しを控えている</strong><span>新生活を整える →</span></a>
     </div>
   </section>
 
   <section class="section soft-section">
     <div class="shell">
-      <div class="section-heading split"><div><p class="eyebrow">YOUR CURRENT STEP</p><h2>いま何に迷っているかから選ぶ</h2></div><p>最初から順番に読む必要はありません。今の悩みに近い入口から確認できます。</p></div>
+      <div class="section-heading split"><div><p class="eyebrow">FIND YOUR QUESTION</p><h2>今、どこで迷っていますか？</h2></div><p>家づくりは、全員が同じ順番で悩むわけではありません。今の状況に近いところから確認してください。</p></div>
       <div class="decision-grid">
-        <a href="/articles/custom-home-building-flow"><small>START 01</small><strong>何から始めるか分からない</strong><span>注文住宅の流れを見る →</span></a>
-        <a href="/articles/built-house-vs-custom-home"><small>START 02</small><strong>建売と注文住宅で迷っている</strong><span>違いを比較する →</span></a>
-        <a href="/articles/housing-company-checkpoints"><small>START 03</small><strong>住宅会社をどう選ぶか知りたい</strong><span>選び方を確認する →</span></a>
-        <a href="/articles/how-many-house-builders"><small>START 04</small><strong>何社比較するか知りたい</strong><span>比較社数を考える →</span></a>
-        <a href="/articles/house-builder-estimate-comparison"><small>START 05</small><strong>見積書を比較したい</strong><span>見積書の見方を確認する →</span></a>
-        <a href="/articles/custom-home-request-service-comparison"><small>START 06</small><strong>住宅会社・資料請求サービスを比較したい</strong><span>比較方法を選ぶ →</span></a>
-        <a href="/articles/custom-home-before-contract-checklist"><small>START 07</small><strong>契約直前の確認をしたい</strong><span>契約前の項目を見る →</span></a>
+        <a href="/articles/custom-home-building-flow"><strong>何から始めればいいか分からない</strong><p>家づくり全体の流れや、最初に考えることを整理したい人向け。</p><span>注文住宅を建てるまでの流れを確認する →</span></a>
+        <a href="/articles/built-house-vs-custom-home"><strong>建売住宅と注文住宅で迷っている</strong><p>建売と注文住宅の違いを比較し、自分に合う方を考えたい人向け。</p><span>建売と注文住宅の違いを比較する →</span></a>
+        <a href="/articles/housing-exhibition-before-visit"><strong>住宅展示場へ行こうか迷っている</strong><p>展示場へ行く前に準備しておきたいことを確認したい人向け。</p><span>住宅展示場へ行く前の準備を確認する →</span></a>
+        <a href="/articles/housing-company-checkpoints"><strong>住宅会社をどう選べばいいか分からない</strong><p>ハウスメーカー・工務店を選ぶときの判断基準を整理したい人向け。</p><span>住宅会社選びのチェックポイントを見る →</span></a>
+        <a href="/articles/how-many-house-builders"><strong>何社くらい比較すればいいか知りたい</strong><p>住宅会社を何社比較するべきか迷っている人向け。</p><span>ハウスメーカーの比較社数を確認する →</span></a>
+        <a href="/articles/custom-home-request-service-comparison"><strong>比較する住宅会社がまだ十分にない</strong><p>これから住宅会社や提案を比較したい人向け。</p><span>住宅会社・資料請求サービスを比較する →</span></a>
+        <a href="/articles/house-builder-estimate-comparison"><strong>見積書を比較したい</strong><p>複数社の見積もりや総額、費用項目を比較したい人向け。</p><span>ハウスメーカーの見積書を比較する →</span></a>
+        <a href="/articles/custom-home-before-contract-checklist"><strong>契約前の最終確認をしたい</strong><p>契約直前に確認漏れがないかチェックしたい人向け。</p><span>注文住宅の契約前チェック項目を見る →</span></a>
       </div>
       {posts.length === 0 && <p class="empty-note">現在、公開中の記事はありません。未完成の記事は表示していません。</p>}
     </div>
