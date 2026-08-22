@@ -3,10 +3,9 @@ title: "住宅展示場はいきなり行っていい？行く前に知ってお
 description: "住宅展示場へ予約なしで行けるか、行く前に整理したい予算・希望・質問、モデルハウスを見る際の注意点を解説します。"
 category: "custom-home"
 publishedAt: 2026-08-10
-updatedAt: 2026-08-10
+updatedAt: 2026-08-22
 checkedAt: 2026-08-10
 draft: false
-nextSlug: "custom-home-building-flow"
 ---
 
 「家が欲しいと思ったら、とりあえず住宅展示場に行けばいいの？」
