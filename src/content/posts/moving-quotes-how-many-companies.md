@@ -6,9 +6,8 @@ publishedAt: 2026-08-22
 updatedAt: 2026-08-22
 checkedAt: 2026-08-22
 draft: false
+affiliateDisclosure: true
 ---
-
-> **本ページにはアフィリエイト広告が含まれています。**
 
 引越し業者を決めるとき、
 
