@@ -3,10 +3,9 @@ title: "注文住宅を建てるまでの流れ｜何から始める？"
 description: "注文住宅を検討し始めてから入居するまでの基本的な流れと、最初に考えたい家族の暮らしや予算、住宅会社比較を順番に整理します。"
 category: "custom-home"
 publishedAt: 2026-08-10
-updatedAt: 2026-08-10
+updatedAt: 2026-08-22
 checkedAt: 2026-08-10
 draft: false
-nextSlug: "housing-company-checkpoints"
 ---
 
 「注文住宅が気になるけれど、何から始めればいいのか分からない」
@@ -206,6 +205,10 @@ SUUMOで、
 「こんな家も建てられるんだ」
 
 くらいまで視野を広げる期間と考えてもいいでしょう。
+
+まだ比較する住宅会社が決まっていない場合は、資料請求・相談サービスを使って候補を集める方法もあります。
+
+**→ 住宅会社や提案を比較したい：[注文住宅の資料請求・相談サービスを比較｜自分に合う選び方を解説](/articles/custom-home-request-service-comparison)**
 
 ## STEP4｜土地と住宅会社を探す
 
