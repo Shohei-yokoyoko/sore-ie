@@ -3,12 +3,14 @@ title: "注文住宅の資料請求・相談サービスを比較｜自分に合
 description: "注文住宅の資料請求・相談サービスをタイプ別に比較し、自分に合う探し方や利用時の注意点を実体験を交えて整理します。"
 category: "custom-home"
 publishedAt: 2026-08-10
-updatedAt: 2026-08-14
+updatedAt: 2026-08-25
 checkedAt: 2026-08-10
 draft: false
+affiliateDisclosure: true
+affiliateDisclosureText: "【PR】本ページにはアフィリエイト広告が含まれています。"
 ---
 
-> **本ページにはアフィリエイト広告が含まれています。**
+> **【PR】本ページにはアフィリエイト広告が含まれています。**
 
 家づくりを考え始めると、
 
