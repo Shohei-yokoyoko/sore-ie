@@ -22,7 +22,7 @@ const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', he
   <Breadcrumbs items={[{ label: 'カテゴリー', href: '/categories' }, { label: category.name, href: `/categories/${category.slug}` }, { label: post.data.title }]} />
   <article class="article-shell">
     <header class="article-header"><p class="article-category">{category.name}</p><h1>{post.data.title}</h1><p class="article-description">{post.data.description}</p><dl class="article-dates"><div><dt>公開日</dt><dd><time datetime={post.data.publishedAt.toISOString()}>{post.data.publishedAt.toLocaleDateString('ja-JP')}</time></dd></div>{post.data.updatedAt && <div><dt>更新日</dt><dd><time datetime={post.data.updatedAt.toISOString()}>{post.data.updatedAt.toLocaleDateString('ja-JP')}</time></dd></div>}</dl></header>
-    {post.data.affiliateDisclosure && <p class="affiliate-disclosure"><strong>本ページにはアフィリエイト広告が含まれています。</strong></p>}
+    {post.data.affiliateDisclosure && <p class="affiliate-disclosure"><strong>{post.data.affiliateDisclosureText ?? '本ページにはアフィリエイト広告が含まれています。'}</strong></p>}
     {headings.length > 0 && <nav class="toc" aria-label="目次"><p>目次</p><ol>{headings.filter((h) => h.depth <= 3).map((h) => <li class={`depth-${h.depth}`}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav>}
     <div class="prose"><Content /></div>
     {next && <NextRead href={`/articles/${next.id}`} title={next.data.title} description={next.data.description} />}
