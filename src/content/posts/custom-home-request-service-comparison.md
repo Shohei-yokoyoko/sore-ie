@@ -1,5 +1,5 @@
 ---
-title: "注文住宅の資料請求サイトおすすめ比較｜タウンライフ・LIFULL HOME'S・SUUMO・HOME4Uの違いと選び方"
+title: "注文住宅の資料請求・相談サービスおすすめ比較｜タウンライフ・LIFULL HOME'S・SUUMO・HOME4Uの違いと選び方"
 description: "注文住宅の資料請求・相談サービスをタイプ別に比較し、自分に合う探し方や利用時の注意点を実体験を交えて整理します。"
 category: "custom-home"
 publishedAt: 2026-08-10
