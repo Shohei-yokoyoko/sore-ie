@@ -281,9 +281,36 @@ NURO光は現在も、開通まで利用できるWi-Fiルーターのレンタ�
 
 ## 新築で使える光回線を確認する
 
-**新居の住所で利用できる回線や、料金・開通までの期間を比較してから決めると安心です。**
+新居では、住所によって利用できる光回線が異なります。
 
-**新築で使える光回線を比較する**
+月額料金やキャンペーンだけでなく、開通時期・スマホとの組み合わせなども確認して、自分の条件に合う回線を比較してください。
+
+<div class="affiliate-comparison-grid">
+  <section class="affiliate-comparison-card">
+    <h3>SoftBank 光</h3>
+    <p>SoftBank 光のキャンペーン・提供条件を確認</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8WB88I+3NMM+61JSI" rel="nofollow">SoftBank光キャンペーンサイト</a>
+    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9J+8WB88I+3NMM+61JSI" alt="">
+  </section>
+  <section class="affiliate-comparison-card">
+    <h3>GMOとくとくBB ドコモ光</h3>
+    <p>ドコモ光の料金・キャンペーン・提供条件を確認</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8UIXF6+50+54MIOY" rel="nofollow">IPv6対応で最大1Gbps！速いドコモ光は【GMOとくとくBBのドコモ光】</a>
+    <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BAH9J+8UIXF6+50+54MIOY" alt="">
+  </section>
+  <section class="affiliate-comparison-card">
+    <h3>GMOとくとくBB光</h3>
+    <p>GMOとくとくBB光の料金・提供条件を確認</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8TXHTE+50+6M5TEQ" rel="nofollow">シンプルに安い速いGMOとくとくBB光！</a>
+    <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4BAH9J+8TXHTE+50+6M5TEQ" alt="">
+  </section>
+  <section class="affiliate-comparison-card">
+    <h3>auひかり</h3>
+    <p>auひかりのキャンペーン・提供条件を確認</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" rel="nofollow">【auひかり】</a>
+    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" alt="">
+  </section>
+</div>
 
 ---
 
