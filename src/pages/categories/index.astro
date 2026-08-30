@@ -1,11 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import CategoryCard from '../../components/CategoryCard.astro';
 import { categories } from '../../site-config';
+
+const posts = await getCollection('posts', ({ data }) => !data.draft);
+const countFor = (slug: string) => posts.filter((post) => post.data.category === slug).length;
 ---
 <BaseLayout title="カテゴリー" description="住まいに関する6つのカテゴリーから記事を探せます。">
   <Breadcrumbs items={[{ label: 'カテゴリー' }]} />
   <section class="page-hero shell"><p class="eyebrow">CATEGORIES</p><h1>カテゴリーから探す</h1><p>住まいの悩みに近いテーマを選んでください。</p></section>
-  <section class="section shell"><div class="category-grid">{categories.map((category) => <CategoryCard category={category} />)}</div></section>
+  <section class="section shell"><div class="category-grid">{categories.map((category) => <CategoryCard category={category} count={countFor(category.slug)} />)}</div></section>
 </BaseLayout>
+
