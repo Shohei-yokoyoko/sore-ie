@@ -160,6 +160,13 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .prose ul, .prose ol { padding-left: 1.5em; }
 .prose blockquote { margin: 2em 0; padding: 20px 24px; border: 0; border-radius: 12px; background: #edf3ed; color: #2c493d; }
 .prose a { color: #1c5b78; font-weight: 700; }
+.affiliate-comparison-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 30px 0 2em; }
+.affiliate-comparison-card { display: flex; flex-direction: column; min-width: 0; min-height: 230px; padding: 24px; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; box-shadow: 0 10px 28px rgba(24, 52, 43, .07); }
+.prose .affiliate-comparison-card h3 { margin: 0 0 10px; font-family: "Yu Mincho", serif; font-size: 1.24rem; line-height: 1.5; }
+.affiliate-comparison-card p { margin: 0 0 20px; color: var(--muted); font-size: .94rem; line-height: 1.75; }
+.prose .affiliate-comparison-card a { display: flex; align-items: center; justify-content: center; min-height: 54px; margin-top: auto; padding: 12px 16px; border-radius: 10px; background: var(--green); color: #fff; line-height: 1.5; text-align: center; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+.prose .affiliate-comparison-card a:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+.affiliate-comparison-card img { display: block; }
 .table-scroll { overflow-x: auto; margin: 2em 0; border: 1px solid var(--line); border-radius: 12px; }
 table { width: 100%; min-width: 600px; border-collapse: collapse; font-size: .92rem; }
 th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
@@ -194,7 +201,7 @@ tbody th { background: var(--cream); color: var(--navy); }
   .home-visual { width: min(100%, 520px); margin-inline: auto; }
   .section { padding-block: 68px; }
   .section-heading.split, .about-grid, .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-  .path-grid, .decision-grid, .category-grid { grid-template-columns: 1fr; }
+  .path-grid, .decision-grid, .category-grid, .affiliate-comparison-grid { grid-template-columns: 1fr; }
   .path-grid a { min-height: 190px; }
   .reading-path { grid-template-columns: 1fr; }
   .reading-path li { border-bottom: 0; }
@@ -219,3 +226,4 @@ tbody th { background: var(--cream); color: var(--navy); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
