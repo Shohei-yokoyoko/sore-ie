@@ -56,7 +56,7 @@ affiliateDisclosureText: "【PR】本ページにはアフィリエイト広告�
 
 というところまで比較したい場合は、タウンライフ家づくりが候補になります。
 
-<p><a class="button" href="https://townlife-aff.com/link.php?i=645b492639451&m=6a79555388a7a" target="_blank" rel="sponsored nofollow noopener">→ タウンライフ家づくりのサービス内容を確認する【PR】</a></p>
+<p><a class="button townlife-cta-button" href="https://townlife-aff.com/link.php?i=645b492639451&m=6a79555388a7a" target="_blank" rel="sponsored nofollow noopener">→ タウンライフ家づくりのサービス内容を確認する【PR】</a></p>
 
 ---
 
@@ -148,7 +148,7 @@ HOME4U「家づくりのとびら」は、専門アドバイザーへオンラ�
 
 を比較したい人に向いています。
 
-<p><a class="button" href="https://townlife-aff.com/link.php?i=645b492639451&m=6a79555388a7a" target="_blank" rel="sponsored nofollow noopener">→ タウンライフ家づくりで家づくり計画を依頼する【PR】</a></p>
+<p><a class="button townlife-cta-button" href="https://townlife-aff.com/link.php?i=645b492639451&m=6a79555388a7a" target="_blank" rel="sponsored nofollow noopener">→ タウンライフ家づくりで家づくり計画を依頼する【PR】</a></p>
 
 ### 幅広く住宅会社やカタログを見たい
 
@@ -508,7 +508,7 @@ SUUMO注文住宅では、複数の施工会社のカタログをまとめて請
 
 という場合は、サービス内容を確認してみてください。
 
-<p><a class="button" href="https://townlife-aff.com/link.php?i=645b492639451&m=6a79555388a7a" target="_blank" rel="sponsored nofollow noopener">→ タウンライフ家づくりで家づくり計画を依頼する【PR】</a></p>
+<p><a class="button townlife-cta-button" href="https://townlife-aff.com/link.php?i=645b492639451&m=6a79555388a7a" target="_blank" rel="sponsored nofollow noopener">→ タウンライフ家づくりで家づくり計画を依頼する【PR】</a></p>
 
 ---
 
