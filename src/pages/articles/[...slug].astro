@@ -17,7 +17,7 @@ const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const next = post.data.nextSlug ? allPosts.find((item) => item.id === post.data.nextSlug) : undefined;
 const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description, datePublished: post.data.publishedAt.toISOString(), dateModified: (post.data.updatedAt ?? post.data.publishedAt).toISOString(), inLanguage: 'ja-JP' };
 ---
-<BaseLayout title={post.data.title} description={post.data.description} image={post.data.image} type="article">
+<BaseLayout title={post.data.seoTitle ?? post.data.title} description={post.data.description} image={post.data.image} type="article">
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleSchema)} />
   <Breadcrumbs items={[{ label: 'カテゴリー', href: '/categories' }, { label: category.name, href: `/categories/${category.slug}` }, { label: post.data.title }]} />
   <article class="article-shell">
@@ -30,3 +30,4 @@ const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', he
     {post.data.checkedAt && <p class="checked-date">情報確認日：{post.data.checkedAt.toLocaleDateString('ja-JP')}</p>}
   </article>
 </BaseLayout>
+
