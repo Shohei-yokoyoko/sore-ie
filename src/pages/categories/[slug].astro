@@ -11,7 +11,7 @@ const customHomeStages = [
   { title: '家づくりを考え始めた', description: '家の選び方や、注文住宅を検討する最初の段階です。', ids: ['built-house-vs-custom-home', 'custom-home-building-flow', 'housing-exhibition-before-visit'] },
   { title: '住宅会社を選ぶ', description: '比較する基準・会社数・価格の見方を整理します。', ids: ['housemaker-vs-builder', 'housing-company-checkpoints', 'how-many-house-builders', 'house-builder-price-per-tsubo'] },
   { title: '見積もり・契約を確認する', description: '具体的な見積書や契約前の確認へ進んだ段階です。', ids: ['house-builder-estimate-comparison', 'custom-home-before-contract-checklist'] },
-  { title: '予算・後悔を防ぐ', description: '予算と、住んでから気づきやすい点を確認します。', ids: ['custom-home-budget-overrun', 'home-building-regrets'] },
+  { title: '予算・後悔を防ぐ', description: '予算と、住んでから気づきやすい点を確認します。', ids: ['custom-home-budget-overrun', 'home-building-regrets', 'custom-home-floor-plan-regrets'] },
   { title: '住宅会社・相談サービスを比較する', description: '住宅会社や相談方法の候補を集めたい段階です。', ids: ['custom-home-request-service-comparison'] },
 ].map((stage) => ({ ...stage, posts: stage.ids.flatMap((id) => { const post = posts.find((item) => item.id === id); return post ? [post] : []; }) }));
 ---
