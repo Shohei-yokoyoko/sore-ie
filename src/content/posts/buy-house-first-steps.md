@@ -459,11 +459,10 @@ draft: false
 今の状況に合わせて、次へ進んでください。
 
 <div class="decision-grid">
-  <!-- pending-internal-link: article-7 -->
-  <div class="decision-item is-pending">
+  <a href="/articles/rent-vs-own-home">
     <strong>賃貸のままか、家を買うかまだ迷っている</strong>
-    <span>賃貸と持ち家は結局どっちがいい？向いている人を比較</span>
-  </div>
+    <span>賃貸と持ち家は結局どっちがいい？向いている人を比較 →</span>
+  </a>
   <a href="/articles/built-house-vs-custom-home">
     <strong>建売と注文住宅で迷っている</strong>
     <span>建売住宅と注文住宅どっちがいい？メリット・デメリット比較 →</span>
