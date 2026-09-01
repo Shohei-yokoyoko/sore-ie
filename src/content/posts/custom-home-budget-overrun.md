@@ -447,7 +447,7 @@ B社は3,200万円
 
 まだ比較する住宅会社が十分にそろっていない場合は、予算や希望を整理したうえで比較候補を集める方法もあります。
 
-**→ 住宅会社や提案を比較したい：[注文住宅の資料請求・相談サービスを比較｜自分に合う選び方を解説](/articles/custom-home-request-service-comparison)**
+**→ 住宅会社や提案を比較したい：[注文住宅の資料請求・相談サービスを比較する](/articles/custom-home-request-service-comparison)**
 
 ---
 
@@ -457,3 +457,4 @@ B社は3,200万円
 
 - [東京都主税局「不動産取得税」](https://www.tax.metro.tokyo.lg.jp/kazei/real_estate/fudosan)
 - [神奈川県「不動産取得税」](https://www.pref.kanagawa.jp/zei/kenzei/a001/b011/index.html)
+

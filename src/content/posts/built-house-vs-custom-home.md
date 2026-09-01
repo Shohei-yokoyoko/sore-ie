@@ -449,7 +449,7 @@ draft: false
 
 一方、注文住宅なら自分たちの予算でどのような家や提案を比較できるのか確認したい方は、住宅会社探しへ進む方法もあります。
 
-**→ 住宅会社や提案を比較してみたい：[注文住宅の資料請求・相談サービスを比較｜自分に合う選び方を解説](/articles/custom-home-request-service-comparison)**
+**→ 住宅会社や提案を比較してみたい：[注文住宅の資料請求・相談サービスを比較する](/articles/custom-home-request-service-comparison)**
 
 ---
 
@@ -459,3 +459,4 @@ draft: false
 
 - [国土交通省「みらいエコ住宅2026事業」](https://mirai-eco2026.mlit.go.jp/assets/doc/miraieco_faq_bunjyou.pdf)
 - [住宅金融支援機構「フラット35利用者調査」](https://www.jhf.go.jp/about/research/loan/flat35/index.html)
+

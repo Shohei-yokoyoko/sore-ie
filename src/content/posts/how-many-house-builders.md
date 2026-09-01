@@ -252,7 +252,7 @@ LIFULL HOME'Sでは相見積もりの目安として3〜5社を挙げていま�
 
 カタログを比較する方法、間取りや資金計画まで提案してもらう方法、専門家へ相談する方法などがあります。
 
-→ 次に読む：[注文住宅の資料請求・相談サービスを比較｜自分に合う選び方を解説](/articles/custom-home-request-service-comparison)
+→ 次に読む：[注文住宅の資料請求・相談サービスを比較する](/articles/custom-home-request-service-comparison)
 
 ## 確認日
 
@@ -262,3 +262,4 @@ LIFULL HOME'Sでは相見積もりの目安として3〜5社を挙げていま�
 
 - 国土交通省「住宅市場動向調査」
 - LIFULL HOME'S「納得のいく注文住宅を建てるために必ずしたい『相見積り』」
+

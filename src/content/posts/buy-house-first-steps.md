@@ -346,7 +346,7 @@ draft: false
 
 注文住宅を考えているなら、住宅会社や資料請求・相談サービスを使って候補を集める方法もあります。
 
-**→ [注文住宅の資料請求・相談サービスおすすめ比較｜タウンライフ・LIFULL HOME'S・SUUMO・HOME4Uの違いと選び方](/articles/custom-home-request-service-comparison)**
+**→ [注文住宅の資料請求・相談サービスを比較する](/articles/custom-home-request-service-comparison)**
 
 ---
 
@@ -473,7 +473,7 @@ draft: false
   </a>
   <a href="/articles/custom-home-request-service-comparison">
     <strong>注文住宅を考えていて、比較する会社がまだ決まっていない</strong>
-    <span>注文住宅の資料請求・相談サービスおすすめ比較｜タウンライフ・LIFULL HOME'S・SUUMO・HOME4Uの違いと選び方 →</span>
+    <span>注文住宅の資料請求・相談サービスを比較する →</span>
   </a>
 </div>
 

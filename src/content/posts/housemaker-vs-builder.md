@@ -536,7 +536,7 @@ A社とB社では価格も家も保証も違います。
 
 住宅会社や資料請求サービスの探し方はこちらで比較しています。
 
-**→ [注文住宅の資料請求・相談サービスおすすめ比較｜タウンライフ・LIFULL HOME'S・SUUMO・HOME4Uの違いと選び方](/articles/custom-home-request-service-comparison)**
+**→ [注文住宅の資料請求・相談サービスを比較する](/articles/custom-home-request-service-comparison)**
 
 ---
 
@@ -583,7 +583,7 @@ A社とB社では価格も家も保証も違います。
   </a>
   <a href="/articles/custom-home-request-service-comparison">
     <strong>比較する住宅会社自体がまだ決まっていない</strong>
-    <span>注文住宅の資料請求・相談サービスおすすめ比較｜タウンライフ・LIFULL HOME'S・SUUMO・HOME4Uの違いと選び方 →</span>
+    <span>注文住宅の資料請求・相談サービスを比較する →</span>
   </a>
 </div>
 

@@ -372,7 +372,7 @@ B社：坪単価80万円
 
 まだ比較できる住宅会社そのものが十分に見つかっていない場合は、資料請求・相談サービスから候補を探す方法もあります。
 
-→ 比較候補を探したい：[注文住宅の資料請求・相談サービスを比較｜自分に合う選び方を解説](/articles/custom-home-request-service-comparison)
+→ 比較候補を探したい：[注文住宅の資料請求・相談サービスを比較する](/articles/custom-home-request-service-comparison)
 
 ---
 
@@ -459,3 +459,4 @@ B社：坪単価80万円
 見積書では総額だけでなく、「何が含まれているのか」を比較する必要があります。
 
 → [ハウスメーカーの見積書はどこを見る？比較ポイントを解説](/articles/house-builder-estimate-comparison)
+
