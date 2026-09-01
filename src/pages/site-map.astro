@@ -1,4 +1,28 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'; import Breadcrumbs from '../components/Breadcrumbs.astro'; import { categories } from '../site-config';
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { categories } from '../site-config';
+
+const posts = (await getCollection('posts', ({ data }) => !data.draft)).sort((a, b) => b.data.publishedAt.valueOf() - a.data.publishedAt.valueOf());
+const categoryArticles = categories.map((category) => ({
+  category,
+  posts: posts.filter((post) => post.data.category === category.slug),
+})).filter((group) => group.posts.length > 0);
 ---
-<BaseLayout title="サイトマップ"><Breadcrumbs items={[{ label: 'サイトマップ' }]} /><section class="page-hero shell"><p class="eyebrow">SITE MAP</p><h1>サイトマップ</h1></section><section class="legal-page shell"><h2>カテゴリー</h2><ul>{categories.map((item) => <li><a href={`/categories/${item.slug}`}>{item.name}</a></li>)}</ul><h2>このサイトについて</h2><ul><li><a href="/about">このブログについて</a></li><li><a href="/profile">プロフィール</a></li><li><a href="/privacy">プライバシーポリシー</a></li><li><a href="/disclaimer">免責事項</a></li><li><a href="/contact">お問い合わせ</a></li></ul></section></BaseLayout>
+<BaseLayout title="サイトマップ">
+  <Breadcrumbs items={[{ label: 'サイトマップ' }]} />
+  <section class="page-hero shell"><p class="eyebrow">SITE MAP</p><h1>サイトマップ</h1></section>
+  <section class="legal-page shell">
+    <h2>カテゴリー</h2>
+    <ul>{categories.map((item) => <li><a href={`/categories/${item.slug}`}>{item.name}</a></li>)}</ul>
+    <h2>公開記事</h2>
+    {categoryArticles.map(({ category, posts }) => <section>
+      <h3>{category.name}</h3>
+      <ul>{posts.map((post) => <li><a href={`/articles/${post.id}`}>{post.data.title}</a></li>)}</ul>
+    </section>)}
+    <h2>このサイトについて</h2>
+    <ul><li><a href="/about">このブログについて</a></li><li><a href="/profile">プロフィール</a></li><li><a href="/privacy">プライバシーポリシー</a></li><li><a href="/disclaimer">免責事項</a></li><li><a href="/contact">お問い合わせ</a></li></ul>
+  </section>
+</BaseLayout>
+
