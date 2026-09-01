@@ -5,6 +5,7 @@ const posts = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/posts' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     description: z.string(),
     category: z.enum(['rent', 'buy-or-rent', 'custom-home', 'used-home', 'moving', 'housing-trouble']),
     publishedAt: z.coerce.date(),
@@ -27,3 +28,4 @@ const posts = defineCollection({
 });
 
 export const collections = { posts };
+
