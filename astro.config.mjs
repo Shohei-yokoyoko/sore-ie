@@ -1,7 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
-const site = process.env.PUBLIC_SITE_URL ?? 'https://replace-with-domain.example';
+const site = 'https://sore-ie.com';
 
 export default defineConfig({
   site,
