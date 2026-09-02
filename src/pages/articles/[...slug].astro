@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import NextRead from '../../components/NextRead.astro';
 import CTA from '../../components/CTA.astro';
+import AuthorBox from '../../components/AuthorBox.astro';
 import { categories } from '../../site-config';
 
 export async function getStaticPaths() {
@@ -15,13 +16,20 @@ const { Content, headings } = await render(post);
 const category = categories.find((item) => item.slug === post.data.category)!;
 const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const next = post.data.nextSlug ? allPosts.find((item) => item.id === post.data.nextSlug) : undefined;
-const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description, datePublished: post.data.publishedAt.toISOString(), dateModified: (post.data.updatedAt ?? post.data.publishedAt).toISOString(), inLanguage: 'ja-JP' };
+const authorDescriptions = {
+  'custom-home': '元・不動産賃貸仲介営業。現在は新築住宅に関わる業務に従事しています。自身でも持ち家を購入しており、住宅購入時の実体験と住宅関連業務で得た知識をもとに解説しています。',
+  rent: '元・不動産賃貸仲介営業。これまで賃貸住宅に7軒住んだ経験があり、現在は持ち家で生活しています。仲介実務と自身の居住経験の両方から、賃貸選びで見落としやすい点を解説しています。',
+  'buy-or-rent': '元・不動産賃貸仲介営業。賃貸住宅に7軒住んだ経験があり、現在は新築住宅に関わる業務に従事しながら持ち家で生活しています。賃貸・住宅購入の両方を経験した立場から解説しています。',
+  moving: '元・不動産賃貸仲介営業。賃貸住宅7軒の居住経験と持ち家購入経験があり、現在は新築住宅に関わる業務に従事しています。自身の引越しや新生活準備の実体験をもとに解説しています。',
+} as const;
+const authorDescription = authorDescriptions[post.data.category as keyof typeof authorDescriptions];
+const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description, datePublished: post.data.publishedAt.toISOString(), dateModified: (post.data.updatedAt ?? post.data.publishedAt).toISOString(), author: { '@type': 'Person', name: 'しょーちゃん', url: new URL('/profile', Astro.site ?? Astro.url.origin).toString() }, inLanguage: 'ja-JP' };
 ---
 <BaseLayout title={post.data.seoTitle ?? post.data.title} description={post.data.description} image={post.data.image} type="article">
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleSchema)} />
   <Breadcrumbs items={[{ label: 'カテゴリー', href: '/categories' }, { label: category.name, href: `/categories/${category.slug}` }, { label: post.data.title }]} />
   <article class="article-shell">
-    <header class="article-header"><p class="article-category">{category.name}</p><h1>{post.data.title}</h1><p class="article-description">{post.data.description}</p><dl class="article-dates"><div><dt>公開日</dt><dd><time datetime={post.data.publishedAt.toISOString()}>{post.data.publishedAt.toLocaleDateString('ja-JP')}</time></dd></div>{post.data.updatedAt && <div><dt>更新日</dt><dd><time datetime={post.data.updatedAt.toISOString()}>{post.data.updatedAt.toLocaleDateString('ja-JP')}</time></dd></div>}</dl></header>
+    <header class="article-header"><p class="article-category">{category.name}</p><h1>{post.data.title}</h1><p class="article-description">{post.data.description}</p><dl class="article-dates"><div><dt>公開日</dt><dd><time datetime={post.data.publishedAt.toISOString()}>{post.data.publishedAt.toLocaleDateString('ja-JP')}</time></dd></div>{post.data.updatedAt && <div><dt>更新日</dt><dd><time datetime={post.data.updatedAt.toISOString()}>{post.data.updatedAt.toLocaleDateString('ja-JP')}</time></dd></div>}</dl>{authorDescription && <AuthorBox description={authorDescription} />}</header>
     {post.data.affiliateDisclosure && <p class="affiliate-disclosure"><strong>{post.data.affiliateDisclosureText ?? '本ページにはアフィリエイト広告が含まれています。'}</strong></p>}
     {headings.length > 0 && <nav class="toc" aria-label="目次"><p>目次</p><ol>{headings.filter((h) => h.depth <= 3).map((h) => <li class={`depth-${h.depth}`}><a href={`#${h.slug}`}>{h.text}</a></li>)}</ol></nav>}
     <div class="prose"><Content /></div>
