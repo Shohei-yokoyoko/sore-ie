@@ -490,6 +490,8 @@ draft: false
 
 だと思います。
 
+→ 関連記事：[注文住宅の資料請求・相談サービスを比較する](/articles/custom-home-request-service-comparison)
+
 ---
 
 ### 4．住宅展示場などで実物と話を確認する
