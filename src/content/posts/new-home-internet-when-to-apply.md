@@ -310,6 +310,12 @@ NURO光は現在も、開通まで利用できるWi-Fiルーターのレンタ�
     <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" rel="nofollow">【auひかり】</a>
     <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" alt="">
   </section>
+  <section class="affiliate-comparison-card">
+    <h3>NURO 光</h3>
+    <p>NURO 光のキャンペーン・提供条件を確認</p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8QYBSI+2VMU+64C3M" rel="nofollow">インターネットがお得！</a>
+    <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BAH9J+8QYBSI+2VMU+64C3M" alt="">
+  </section>
 </div>
 
 ---
