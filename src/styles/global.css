@@ -154,6 +154,12 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .article-description { color: var(--muted); font-size: 1.05rem; }
 .article-dates { display: flex; flex-wrap: wrap; gap: 18px; margin: 24px 0 0; font-size: .84rem; color: var(--muted); }
 .article-dates div { display: flex; gap: 8px; } .article-dates dt { font-weight: 800; } .article-dates dd { margin: 0; }
+.author-box { display: grid; gap: 8px; margin-top: 24px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 14px; background: #f7f8f4; }
+.author-box p { margin: 0; }
+.author-box-title { color: var(--navy); font-size: .95rem; }
+.author-box-title strong { font-size: 1.05rem; }
+.author-box-description { color: var(--muted); font-size: .9rem; line-height: 1.75; }
+.author-box-link { display: inline-flex; min-height: 40px; width: fit-content; align-items: center; gap: 6px; color: var(--green); font-size: .9rem; font-weight: 800; }
 .affiliate-disclosure { margin: 28px 0 0; padding: 20px 24px; border-radius: 12px; background: #edf3ed; color: #2c493d; }
 .toc { margin: 36px 0 48px; padding: 24px 28px; border: 1px solid var(--line); border-radius: 14px; background: var(--cream); }
 .toc > p { margin: 0 0 10px; color: var(--navy); font-weight: 900; }
@@ -221,6 +227,8 @@ tbody th { background: var(--cream); color: var(--navy); }
   .contact-submit { width: 100%; }
   .article-shell { width: min(100% - 28px, 760px); margin-top: 34px; }
   .article-header h1 { font-size: clamp(2rem, 9vw, 2.8rem); }
+  .author-box { padding: 16px; }
+  .author-box-description { font-size: .88rem; line-height: 1.7; }
   .toc { padding: 20px; }
   .prose { font-size: 1rem; line-height: 1.95; }
   .prose h2 { font-size: 1.48rem; }
