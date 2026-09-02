@@ -16,7 +16,7 @@ const { Content, headings } = await render(post);
 const category = categories.find((item) => item.slug === post.data.category)!;
 const allPosts = await getCollection('posts', ({ data }) => !data.draft);
 const next = post.data.nextSlug ? allPosts.find((item) => item.id === post.data.nextSlug) : undefined;
-const showCheckedDate = post.data.checkedAt && post.id !== 'buy-house-first-steps';
+const showCheckedDate = post.data.checkedAt && !['buy-house-first-steps', 'rental-home-inconveniences'].includes(post.id);
 const authorDescriptions = {
   'custom-home': '元・不動産賃貸仲介営業。現在は新築住宅に関わる業務に従事しています。自身でも持ち家を購入しており、住宅購入時の実体験と住宅関連業務で得た知識をもとに解説しています。',
   rent: '元・不動産賃貸仲介営業。これまで賃貸住宅に7軒住んだ経験があり、現在は持ち家で生活しています。仲介実務と自身の居住経験の両方から、賃貸選びで見落としやすい点を解説しています。',
