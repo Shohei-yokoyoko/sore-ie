@@ -117,6 +117,19 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .empty-state strong { color: var(--navy); font-size: 1.25rem; }
 .legal-page { max-width: 800px; padding-block: 60px 100px; }
 .legal-page h2 { margin-top: 42px; color: var(--navy); font-family: "Yu Mincho", serif; font-size: 1.55rem; }
+.profile-page { line-height: 1.9; }
+.profile-page hr { margin: 48px 0 0; border: 0; border-top: 1px solid var(--line); }
+.profile-summary-card { margin: 0 0 42px; padding: 24px 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #f7f8f4; box-shadow: 0 10px 28px rgba(24, 52, 43, .06); }
+.profile-summary-card p { margin: 0; }
+.profile-summary-label { color: var(--green); font-size: .8rem; font-weight: 800; letter-spacing: .12em; }
+.profile-summary-name { margin-top: 4px !important; color: var(--navy); font-family: "Yu Mincho", serif; font-size: 1.8rem; font-weight: 800; }
+.profile-summary-card dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 24px; margin: 20px 0 0; }
+.profile-summary-card dl div { padding-top: 14px; border-top: 1px solid var(--line); }
+.profile-summary-card dt, .profile-facts dt { color: var(--green); font-size: .82rem; font-weight: 800; }
+.profile-summary-card dd, .profile-facts dd { margin: 4px 0 0; }
+.profile-mission { margin: 28px 0; padding: 20px 24px; border-left: 4px solid var(--green); border-radius: 0 12px 12px 0; background: var(--cream); color: var(--navy); font-family: "Yu Mincho", serif; font-size: 1.25rem; line-height: 1.7; }
+.profile-facts { margin: 24px 0 0; border-top: 1px solid var(--line); }
+.profile-facts div { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--line); }
 .pending-box { padding: 24px; border: 1px dashed #8d9c91; border-radius: 14px; background: var(--cream); color: var(--muted); }
 
 .contact-page { width: min(800px, calc(100% - 40px)); padding-block: 54px 100px; }
@@ -222,6 +235,10 @@ tbody th { background: var(--cream); color: var(--navy); }
   .category-card { min-height: 144px; grid-template-columns: auto 1fr; }
   .category-card .arrow { display: none; }
   .page-hero { padding-block: 50px 30px; }
+  .profile-summary-card { padding: 20px; }
+  .profile-summary-card dl { grid-template-columns: 1fr; }
+  .profile-facts div { grid-template-columns: 1fr; gap: 4px; }
+  .profile-mission { padding: 18px 20px; font-size: 1.12rem; }
   .contact-page { width: min(100% - 28px, 800px); padding-block: 40px 76px; }
   .contact-notice { padding: 20px; }
   .contact-submit { width: 100%; }
