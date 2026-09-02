@@ -23,7 +23,7 @@ const authorDescriptions = {
   moving: '元・不動産賃貸仲介営業。賃貸住宅7軒の居住経験と持ち家購入経験があり、現在は新築住宅に関わる業務に従事しています。自身の引越しや新生活準備の実体験をもとに解説しています。',
 } as const;
 const authorDescription = authorDescriptions[post.data.category as keyof typeof authorDescriptions];
-const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description, datePublished: post.data.publishedAt.toISOString(), dateModified: (post.data.updatedAt ?? post.data.publishedAt).toISOString(), author: { '@type': 'Person', name: 'しょーちゃん', url: new URL('/profile', Astro.site ?? Astro.url.origin).toString() }, inLanguage: 'ja-JP' };
+const articleSchema = { '@context': 'https://schema.org', '@type': 'Article', headline: post.data.title, description: post.data.description, datePublished: post.data.publishedAt.toISOString(), dateModified: (post.data.updatedAt ?? post.data.publishedAt).toISOString(), author: { '@type': 'Person', name: 'SHO', url: new URL('/profile', Astro.site ?? Astro.url.origin).toString() }, inLanguage: 'ja-JP' };
 ---
 <BaseLayout title={post.data.seoTitle ?? post.data.title} description={post.data.description} image={post.data.image} type="article">
   <script type="application/ld+json" slot="head" set:html={JSON.stringify(articleSchema)} />
