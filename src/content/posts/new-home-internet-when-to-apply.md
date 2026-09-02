@@ -55,6 +55,65 @@ affiliateDisclosureText: "※本ページにはアフィリエイト広告が含
 
 を確認しておくと、後から慌てにくくなります。
 
+<figure class="internet-setup-flow" aria-labelledby="internet-setup-flow-title">
+  <figcaption id="internet-setup-flow-title">新築のネット回線｜申込みから開通までの流れ</figcaption>
+  <ol class="internet-flow-steps">
+    <li>
+      <span class="internet-flow-step-number">STEP 1</span>
+      <strong>新居と入居時期が決まる</strong>
+    </li>
+    <li>
+      <span class="internet-flow-step-number">STEP 2</span>
+      <strong>利用したい回線が新居で使えるか確認</strong>
+      <p>対応エリアや建物条件を確認</p>
+    </li>
+    <li>
+      <span class="internet-flow-step-number">STEP 3</span>
+      <strong>できるだけ早めに申し込む</strong>
+      <p>工事が必要な回線は、入居直前まで待たず早めに手続きを進める</p>
+    </li>
+    <li>
+      <span class="internet-flow-step-number">STEP 4</span>
+      <strong>開通工事の日程を調整</strong>
+    </li>
+    <li>
+      <span class="internet-flow-step-number">STEP 5</span>
+      <strong>入居日までに開通できるか確認</strong>
+    </li>
+  </ol>
+
+  <div class="internet-flow-branch" role="group" aria-label="入居日までの開通状況による分岐">
+    <p class="internet-flow-branch-label">ここから2方向に分岐</p>
+    <div class="internet-flow-branch-grid">
+      <section class="internet-flow-path internet-flow-path-ready">
+        <p class="internet-flow-path-label">入居日までに間に合う</p>
+        <span class="internet-flow-arrow" aria-hidden="true">↓</span>
+        <p class="internet-flow-result"><strong>本回線で利用開始</strong></p>
+      </section>
+      <section class="internet-flow-path internet-flow-path-wait">
+        <p class="internet-flow-path-label">入居日までに間に合わない</p>
+        <span class="internet-flow-arrow" aria-hidden="true">↓</span>
+        <p class="internet-flow-result"><strong>レンタルWi-Fiなど一時的な通信手段を検討</strong></p>
+        <span class="internet-flow-arrow" aria-hidden="true">↓</span>
+        <p class="internet-flow-result"><strong>後日本回線の工事・開通</strong></p>
+      </section>
+    </div>
+  </div>
+
+  <aside class="internet-flow-experience" aria-label="SHOの場合">
+    <p class="internet-flow-experience-title">SHOの場合</p>
+    <ol>
+      <li>売買契約とほぼ同時にNURO光を申込み</li>
+      <li>入居1か月以上前に申し込んでいたが、本回線は間に合わず</li>
+      <li>レンタルWi-Fiを利用</li>
+      <li>入居初日からインターネットは利用できた</li>
+      <li>後日、本回線の工事・開通</li>
+    </ol>
+  </aside>
+
+  <p class="internet-flow-note">※申込みから開通までに必要な期間は、回線・建物・工事状況・時期などによって異なります。早めに申し込んでも、入居日までの開通が保証されるわけではありません。</p>
+</figure>
+
 ## 私は1か月以上前に申し込んでも間に合わなかった
 
 私は新築購入時にNURO光を契約しました。
