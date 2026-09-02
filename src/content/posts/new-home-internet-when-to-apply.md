@@ -285,36 +285,55 @@ NURO光は現在も、開通まで利用できるWi-Fiルーターのレンタ�
 
 月額料金やキャンペーンだけでなく、開通時期・スマホとの組み合わせなども確認して、自分の条件に合う回線を比較してください。
 
+### どの光回線を選べばいいか迷ったら
+
+光回線は、単純に「どこが一番おすすめ」と決めるより、使っているスマホ会社や契約条件、提供エリアなどで選ぶ方が分かりやすいです。
+
+まずは次のように候補を絞ってみてください。
+
+- **SoftBank・Y!mobileを使っている人**<br>→ SoftBank 光を候補に
+- **ドコモを使っている人**<br>→ ドコモ光を候補に
+- **スマホ会社に縛られず選びたい人、契約期間の縛りも気になる人**<br>→ GMOとくとくBB光を候補に
+- **auを使っていて、セット条件が合う人**<br>→ auひかりを候補に
+- **NURO光のサービス内容や速度に魅力を感じる人、開通までの対策も確認したい人**<br>→ NURO 光を候補に
+
+ただし、実際に申し込めるかどうかは住所・提供エリア・建物条件などによって変わります。最終的には各公式ページで確認してください。
+
 <div class="affiliate-comparison-grid">
-  <section class="affiliate-comparison-card">
-    <h3>SoftBank 光</h3>
-    <p>SoftBank 光のキャンペーン・提供条件を確認</p>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8WB88I+3NMM+61JSI" rel="nofollow">SoftBank光キャンペーンサイト</a>
-    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9J+8WB88I+3NMM+61JSI" alt="">
-  </section>
-  <section class="affiliate-comparison-card">
-    <h3>GMOとくとくBB ドコモ光</h3>
-    <p>ドコモ光の料金・キャンペーン・提供条件を確認</p>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8UIXF6+50+54MIOY" rel="nofollow">IPv6対応で最大1Gbps！速いドコモ光は【GMOとくとくBBのドコモ光】</a>
-    <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BAH9J+8UIXF6+50+54MIOY" alt="">
-  </section>
   <section class="affiliate-comparison-card">
     <h3>GMOとくとくBB光</h3>
     <p>GMOとくとくBB光の料金・提供条件を確認</p>
+    <p><strong>スマホ会社に縛られず、契約期間も気にして選びたい人に。</strong></p>
     <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8TXHTE+50+6M5TEQ" rel="nofollow">シンプルに安い速いGMOとくとくBB光！</a>
     <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4BAH9J+8TXHTE+50+6M5TEQ" alt="">
   </section>
   <section class="affiliate-comparison-card">
-    <h3>auひかり</h3>
-    <p>auひかりのキャンペーン・提供条件を確認</p>
-    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" rel="nofollow">【auひかり】</a>
-    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" alt="">
+    <h3>GMOとくとくBB ドコモ光</h3>
+    <p>ドコモ光の料金・キャンペーン・提供条件を確認</p>
+    <p><strong>ドコモユーザーで、光回線もまとめて検討したい人に。</strong></p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8UIXF6+50+54MIOY" rel="nofollow">IPv6対応で最大1Gbps！速いドコモ光は【GMOとくとくBBのドコモ光】</a>
+    <img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4BAH9J+8UIXF6+50+54MIOY" alt="">
+  </section>
+  <section class="affiliate-comparison-card">
+    <h3>SoftBank 光</h3>
+    <p>SoftBank 光のキャンペーン・提供条件を確認</p>
+    <p><strong>SoftBank・Y!mobileユーザーで、スマホとのセットも確認したい人に。</strong></p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8WB88I+3NMM+61JSI" rel="nofollow">SoftBank光キャンペーンサイト</a>
+    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9J+8WB88I+3NMM+61JSI" alt="">
   </section>
   <section class="affiliate-comparison-card">
     <h3>NURO 光</h3>
     <p>NURO 光のキャンペーン・提供条件を確認</p>
+    <p><strong>NURO光の速度やサービス内容が気になる人に。開通時期と提供エリアは必ず確認してください。</strong></p>
     <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8QYBSI+2VMU+64C3M" rel="nofollow">インターネットがお得！</a>
     <img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4BAH9J+8QYBSI+2VMU+64C3M" alt="">
+  </section>
+  <section class="affiliate-comparison-card">
+    <h3>auひかり</h3>
+    <p>auひかりのキャンペーン・提供条件を確認</p>
+    <p><strong>auユーザーで、スマホとのセット条件が合う人に。</strong></p>
+    <a href="https://px.a8.net/svt/ejp?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" rel="nofollow">【auひかり】</a>
+    <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BAH9J+8G8IWI+42Y0+5YJRM" alt="">
   </section>
 </div>
 
