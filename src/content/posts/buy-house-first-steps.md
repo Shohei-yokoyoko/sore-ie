@@ -4,6 +4,7 @@ description: "家を買おうと思ったら何から始める？家族との話
 category: "buy-or-rent"
 publishedAt: 2026-08-30
 updatedAt: 2026-08-30
+checkedAt: 2026-08-30
 draft: false
 ---
 
