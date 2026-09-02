@@ -192,6 +192,35 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .prose .affiliate-comparison-card a { display: flex; align-items: center; justify-content: center; min-height: 54px; margin-top: auto; padding: 12px 16px; border-radius: 10px; background: var(--green); color: #fff; line-height: 1.5; text-align: center; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
 .prose .affiliate-comparison-card a:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 .affiliate-comparison-card img { display: block; }
+.internet-setup-flow { margin: 42px 0 54px; padding: 28px; border: 1px solid var(--line); border-radius: var(--radius); background: #fbfaf6; box-shadow: 0 12px 32px rgba(24, 52, 43, .07); }
+.internet-setup-flow figcaption { margin: 0 0 26px; color: var(--navy); font-family: "Yu Mincho", serif; font-size: 1.45rem; font-weight: 800; line-height: 1.55; text-align: center; }
+.internet-flow-steps { width: min(100%, 570px); margin: 0 auto; padding: 0; list-style: none; }
+.internet-flow-steps li { position: relative; display: grid; gap: 5px; justify-items: center; padding: 20px 22px; border: 1px solid #cbd8d0; border-radius: 14px; background: #fff; color: var(--navy); text-align: center; }
+.internet-flow-steps li:not(:last-child) { margin-bottom: 42px; }
+.internet-flow-steps li:not(:last-child)::after { content: "↓"; position: absolute; left: 50%; bottom: -36px; transform: translateX(-50%); color: var(--green); font-size: 1.45rem; font-weight: 900; line-height: 1; }
+.internet-flow-step-number { display: inline-flex; align-items: center; min-height: 26px; padding: 3px 10px; border-radius: 999px; background: var(--green); color: #fff; font-size: .73rem; font-weight: 900; letter-spacing: .08em; }
+.internet-flow-steps strong { font-size: 1.04rem; line-height: 1.65; }
+.internet-flow-steps p { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.65; }
+.internet-flow-branch { width: min(100%, 680px); margin: 28px auto 0; }
+.internet-flow-branch-label { width: fit-content; margin: 0 auto 18px; padding: 4px 12px; border-radius: 999px; background: #e8eee9; color: var(--green); font-size: .78rem; font-weight: 800; }
+.internet-flow-branch-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.internet-flow-path { display: flex; min-width: 0; flex-direction: column; align-items: center; padding: 20px; border-radius: 14px; text-align: center; }
+.internet-flow-path-ready { border: 1px solid #9fc1aa; background: #eef6ef; }
+.internet-flow-path-wait { border: 1px solid #d7bd8a; background: #fff8e9; }
+.internet-flow-path p { margin: 0; }
+.internet-flow-path-label { font-size: .88rem; font-weight: 900; line-height: 1.55; }
+.internet-flow-path-ready .internet-flow-path-label { color: #285d43; }
+.internet-flow-path-wait .internet-flow-path-label { color: #75531c; }
+.internet-flow-arrow { margin: 8px 0; color: var(--green); font-size: 1.25rem; font-weight: 900; line-height: 1; }
+.internet-flow-result { display: flex; width: 100%; min-height: 62px; align-items: center; justify-content: center; padding: 12px; border-radius: 10px; background: #fff; color: var(--navy); font-size: .94rem; line-height: 1.55; }
+.internet-flow-experience { margin: 28px 0 0; padding: 22px 24px; border-left: 5px solid var(--wood); border-radius: 0 14px 14px 0; background: #f4eee5; }
+.internet-flow-experience-title { margin: 0 0 16px; color: #684e32; font-size: .96rem; font-weight: 900; }
+.internet-flow-experience ol { margin: 0; padding: 0; list-style: none; counter-reset: experience-step; }
+.internet-flow-experience li { position: relative; padding: 0 0 28px 34px; color: #4c443a; font-size: .92rem; line-height: 1.65; counter-increment: experience-step; }
+.internet-flow-experience li::before { content: counter(experience-step); position: absolute; top: 1px; left: 0; display: grid; width: 23px; height: 23px; place-items: center; border-radius: 50%; background: var(--wood); color: #fff; font-size: .72rem; font-weight: 900; }
+.internet-flow-experience li:not(:last-child)::after { content: "↓"; position: absolute; left: 7px; bottom: 5px; color: var(--wood); font-weight: 900; }
+.internet-flow-experience li:last-child { padding-bottom: 0; }
+.internet-flow-note { margin: 20px 0 0; color: var(--muted); font-size: .78rem; line-height: 1.7; }
 .table-scroll { overflow-x: auto; margin: 2em 0; border: 1px solid var(--line); border-radius: 12px; }
 table { width: 100%; min-width: 600px; border-collapse: collapse; font-size: .92rem; }
 th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
@@ -249,6 +278,12 @@ tbody th { background: var(--cream); color: var(--navy); }
   .toc { padding: 20px; }
   .prose { font-size: 1rem; line-height: 1.95; }
   .prose h2 { font-size: 1.48rem; }
+  .internet-setup-flow { margin: 34px 0 46px; padding: 22px 16px; }
+  .internet-setup-flow figcaption { margin-bottom: 22px; font-size: 1.24rem; text-align: left; }
+  .internet-flow-steps li { padding: 18px 14px; }
+  .internet-flow-branch-grid { grid-template-columns: 1fr; }
+  .internet-flow-path { padding: 18px 14px; }
+  .internet-flow-experience { padding: 20px 16px; }
   .prose > table { min-width: 0; table-layout: auto; }
   .footer-grid nav { grid-template-columns: 1fr; }
 }
