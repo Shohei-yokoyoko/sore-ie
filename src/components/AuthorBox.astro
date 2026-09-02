@@ -1,0 +1,14 @@
+---
+interface Props {
+  description: string;
+}
+
+const { description } = Astro.props;
+---
+
+<aside class="author-box" aria-label="著者情報">
+  <p class="author-box-title"><span>執筆者：</span><strong>しょーちゃん</strong></p>
+  <p class="author-box-description">{description}</p>
+  <a class="author-box-link" href="/profile">詳しいプロフィールを見る <span aria-hidden="true">→</span></a>
+</aside>
+
