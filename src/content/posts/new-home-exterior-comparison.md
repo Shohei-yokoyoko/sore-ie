@@ -5,7 +5,6 @@ description: "新築外構はいつから考えればいいのか。見積もり
 category: "custom-home"
 publishedAt: 2026-09-03
 updatedAt: 2026-09-03
-checkedAt: 2026-09-03
 draft: false
 affiliateDisclosure: true
 affiliateDisclosureText: "本ページにはアフィリエイト広告が含まれています。"
