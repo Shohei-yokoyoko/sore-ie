@@ -221,6 +221,19 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .internet-flow-experience li:not(:last-child)::after { content: "↓"; position: absolute; left: 7px; bottom: 5px; color: var(--wood); font-weight: 900; }
 .internet-flow-experience li:last-child { padding-bottom: 0; }
 .internet-flow-note { margin: 20px 0 0; color: var(--muted); font-size: .78rem; line-height: 1.7; }
+.exterior-estimate-flow, .exterior-planning-figure { margin: 38px 0 44px; padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: #fbfaf6; box-shadow: 0 10px 28px rgba(24, 52, 43, .06); }
+.exterior-estimate-flow figcaption, .exterior-planning-figure figcaption { margin: 0 0 24px; color: var(--navy); font-family: "Yu Mincho", serif; font-size: 1.32rem; font-weight: 800; line-height: 1.55; text-align: center; }
+.exterior-estimate-flow ol { width: min(100%, 540px); margin: 0 auto; padding: 0; list-style: none; }
+.exterior-estimate-flow li { position: relative; display: flex; min-height: 62px; align-items: center; gap: 14px; justify-content: center; padding: 14px 18px; border: 1px solid #cbd8d0; border-radius: 12px; background: #fff; color: var(--navy); text-align: center; }
+.exterior-estimate-flow li:not(:last-child) { margin-bottom: 34px; }
+.exterior-estimate-flow li:not(:last-child)::after { content: "↓"; position: absolute; left: 50%; bottom: -27px; transform: translateX(-50%); color: var(--green); font-size: 1.25rem; font-weight: 900; line-height: 1; }
+.exterior-estimate-flow li span, .exterior-planning-figure li span { display: grid; flex: 0 0 28px; width: 28px; height: 28px; place-items: center; border-radius: 50%; background: var(--green); color: #fff; font-size: .78rem; font-weight: 900; }
+.exterior-planning-figure ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.exterior-planning-figure li { display: flex; min-width: 0; min-height: 64px; align-items: center; gap: 12px; padding: 14px 16px; border: 1px solid #cbd8d0; border-radius: 12px; background: #fff; color: var(--navy); }
+.exterior-planning-figure li:last-child { grid-column: 1 / -1; }
+.exterior-comparison-table table { margin: 0; }
+.affiliate-plan-label { margin: 32px 0 10px; padding: 10px 14px; border-left: 4px solid var(--green); background: #edf3ed; color: var(--navy); font-size: .9rem; line-height: 1.65; }
+.affiliate-placeholder { padding: 20px; border: 1px dashed #9cb3a1; border-radius: 12px; background: #f8fbf7; color: var(--muted); font-size: .9rem; line-height: 1.7; text-align: center; }
 .article-photo { width: min(100%, 620px); margin: 34px auto 46px; }
 .article-photo img { display: block; width: 100%; height: auto; border-radius: 14px; }
 .article-photo figcaption { margin-top: 10px; color: var(--muted); font-size: .82rem; line-height: 1.6; text-align: center; }
@@ -287,6 +300,11 @@ tbody th { background: var(--cream); color: var(--navy); }
   .internet-flow-branch-grid { grid-template-columns: 1fr; }
   .internet-flow-path { padding: 18px 14px; }
   .internet-flow-experience { padding: 20px 16px; }
+  .exterior-estimate-flow, .exterior-planning-figure { margin: 32px 0 40px; padding: 20px 14px; }
+  .exterior-estimate-flow figcaption, .exterior-planning-figure figcaption { margin-bottom: 20px; font-size: 1.18rem; text-align: left; }
+  .exterior-estimate-flow li { min-height: 58px; padding: 12px; }
+  .exterior-planning-figure ul { grid-template-columns: 1fr; }
+  .exterior-planning-figure li, .exterior-planning-figure li:last-child { grid-column: auto; min-height: 58px; padding: 12px 14px; }
   .prose > table { min-width: 0; table-layout: auto; }
   .footer-grid nav { grid-template-columns: 1fr; }
 }
