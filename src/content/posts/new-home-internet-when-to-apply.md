@@ -136,6 +136,11 @@ affiliateDisclosureText: "※本ページにはアフィリエイト広告が含
 
 それでも、本来の光回線工事は入居日に間に合いませんでした。
 
+<figure class="article-photo">
+  <img src="/images/nuro-home-equipment-sho.webp" alt="自宅で使用しているNURO光の通信機器" width="1400" height="2139" loading="lazy" decoding="async">
+  <figcaption>現在自宅で使用しているNURO光の機器（SHO撮影）</figcaption>
+</figure>
+
 ## ただし、入居初日からネットは使えた
 
 ここは助かりました。

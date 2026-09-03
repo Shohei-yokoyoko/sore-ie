@@ -221,6 +221,9 @@ a:focus-visible, button:focus-visible, [tabindex]:focus-visible { outline: 3px s
 .internet-flow-experience li:not(:last-child)::after { content: "↓"; position: absolute; left: 7px; bottom: 5px; color: var(--wood); font-weight: 900; }
 .internet-flow-experience li:last-child { padding-bottom: 0; }
 .internet-flow-note { margin: 20px 0 0; color: var(--muted); font-size: .78rem; line-height: 1.7; }
+.article-photo { margin: 34px 0 46px; }
+.article-photo img { display: block; width: 100%; height: auto; border-radius: 14px; }
+.article-photo figcaption { margin-top: 10px; color: var(--muted); font-size: .82rem; line-height: 1.6; text-align: center; }
 .table-scroll { overflow-x: auto; margin: 2em 0; border: 1px solid var(--line); border-radius: 12px; }
 table { width: 100%; min-width: 600px; border-collapse: collapse; font-size: .92rem; }
 th, td { padding: 14px 16px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
