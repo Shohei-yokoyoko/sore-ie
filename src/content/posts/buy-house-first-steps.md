@@ -3,7 +3,7 @@ title: "家を買おうと思ったら最初にやること7ステップ"
 description: "家を買おうと思ったら何から始める？家族との話し合い、無理のない予算、希望条件、建売・注文住宅の選び方、物件探しまで、住宅購入経験をもとに7ステップで解説します。"
 category: "buy-or-rent"
 publishedAt: 2026-08-30
-updatedAt: 2026-08-30
+updatedAt: 2026-09-04
 checkedAt: 2026-08-30
 draft: false
 ---
